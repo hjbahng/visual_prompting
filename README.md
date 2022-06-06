@@ -1,4 +1,4 @@
-# Exploring Visual Prompts for Adapting Large-Scale Models
+## Exploring Visual Prompts for Adapting Large-Scale Models
 
 [[Paper]](https://arxiv.org/abs/2203.17274) [[Project Page]](https://hjbahng.github.io/visual_prompting/)
 
