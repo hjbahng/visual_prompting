@@ -1,9 +1,6 @@
 # Visual Prompting
-[[Paper]](https://arxiv.org/abs/2203.17274) [[Project Page]](https://hjbahng.github.io/visual_prompting/)
+This is the official implementation of the paper [Exploring Visual Prompts for Adapting Large-Scale Models](https://arxiv.org/abs/2203.17274). 
 
-This is the official implementation of the paper [Exploring Visual Prompts for Adapting Large-Scale Models](https://arxiv.org/abs/2203.17274).
-
-## Overview
 ![](./figures/clip_vs_vision.png)
 
 
