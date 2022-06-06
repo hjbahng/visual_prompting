@@ -21,27 +21,29 @@ Prepare the pre-trained models:
 bash models/download_models.sh
 ```
 
-## Training
-* Training for CLIP:
+## Train/Test for CLIP
+* Train a visual prompt:
 ```bash
 python main_clip.py --dataset cifar100 --root [path_to_cifar100] 
 ```
 
-* Training for vision models:
-```bash
-python main_vision.py --model bit_m --dataset cifar100 --root [path_to_cifar100]
-```
-## Testing
-* Testing for CLIP:
+* Test the visual prompt:
 ```bash
 python main_clip.py --evaluate --resume /path/to/checkpoints/model_best.pth.tar --dataset cifar100 --root [path_to_cifar100]
 ```
 
-* Testing for vision models:
+## Train/Test for Vision Models
+* Train a visual prompt:
 ```bash
-python main_vision.py --evaluate --resume /path/to/checkpoints/model_best.pth.tar --model bit_m --dataset cifar100 --root [path_to_cifar100]
+python main_vision.py --model bit_m_rn50 --dataset cifar100 --root [path_to_cifar100]
 ```
 
+* Test the visual prompt:
+```bash
+python main_vision.py --evaluate --resume /path/to/checkpoints/model_best.pth.tar --model bit_m_rn50 --dataset cifar100 --root [path_to_cifar100]
+``` 
+* There are three model choices: `rn50`, `instagram_resnext101_32x8d`, and `bit_m_rn50`.
+* Note that we use `--batch_size 32` for `instagram_resnext101_32x8d` and `--batch_size 128` for other models.
 
 ## Citation
 If you use this code for your research, please cite our paper.
